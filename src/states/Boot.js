@@ -6,6 +6,9 @@ export default class extends Phaser.State {
     this.game.physics.startSystem(Phaser.Physics.ARCADE);
     this.game.physics.setBoundsToWorld();
     this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+
+    // игра не остановится когда canvas потеряет фокус
+    this.stage.disableVisibilityChange = false;
   }
 
   preload() {
@@ -14,6 +17,6 @@ export default class extends Phaser.State {
   }
 
   create() {
-    this.game.state.start('Menu');
+    this.game.state.start('Preload');
   }
 }
