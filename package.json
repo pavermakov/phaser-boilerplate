@@ -22,6 +22,6 @@
     "webpack": "^2.2.0"
   },
   "dependencies": {
-    "phaser-ce": "^2.7.3"
+    "phaser": "^2.6.2"
   }
 }
